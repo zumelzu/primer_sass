@@ -1,0 +1,36 @@
+// rescatando hojas individuales
+@import "./generales/variables";
+
+// anidación o nesting
+
+// header
+header{
+    font-family: $font;
+    background-color: $azul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo{
+        width: 50px;
+    }
+    .menu{
+        width: 100%;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                font-size: 1.5rem;
+                .link_menu{
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: black;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
